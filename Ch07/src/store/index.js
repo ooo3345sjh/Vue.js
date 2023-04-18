@@ -7,7 +7,7 @@
 import { createStore } from "vuex";
 import axios from "axios";
 import { useRouter } from "vue-router";
-import createPersistedState from "vuex-persistedstate";
+// import createPersistedState from "vuex-persistedstate";
 
 const router = useRouter();
 
@@ -39,7 +39,7 @@ const store = createStore({
           const user = response.data.user;
           localStorage.setItem("accessToken", token);
           context.commit("SET_USER", user);
-          router.push("/jwt/loginSuccess");
+          return response;
         })
         .catch((error) => {
           console.log(error);
@@ -52,7 +52,7 @@ const store = createStore({
       return state.user;
     },
   },
-  plugins: [createPersistedState()],
+  // plugins: [createPersistedState()],
 });
 
 // store 내보내기 -> main.js 등록

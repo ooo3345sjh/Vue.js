@@ -22,6 +22,7 @@ const router = createRouter({
         { path: "", component: Login },
         { path: "login", component: Login },
         { path: "loginSuccess", component: LoginSuccess },
+        { path: "*", redirect: "" },
       ],
     },
   ],
