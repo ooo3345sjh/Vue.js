@@ -30,11 +30,11 @@
               <h3 class="text-h6 pa-3">댓글</h3>
               <v-card-item>
                 <v-row>
-                  <v-col cols="9">
+                  <v-col cols="7">
                     <p>작성자 <span>23.05.20</span></p>
                     <p>댓글 내용</p>
                   </v-col>
-                  <v-col cols="3">
+                  <v-col cols="5" class="text-right">
                     <v-btn class="border mr-2"> 수정 </v-btn>
                     <v-btn color="primary"> 삭제</v-btn>
                   </v-col>
@@ -43,8 +43,8 @@
               <v-card-item>
                 <v-textarea
                   label="댓글작성"
-                  variant="outlined"
-                  hide-details="true"
+                  class="border"
+                  hide-details
                 ></v-textarea>
                 <v-sheet class="text-right mt-2">
                   <v-btn class="border mr-2"> 작성취소 </v-btn>

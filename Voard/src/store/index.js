@@ -23,7 +23,7 @@ const store = createStore({
   },
   // actions : 비동기 처리를 수행하고 mutations  메서드를 실행하는 메서드 정의
   actions: {
-    setUser(context) {
+    setUser(context, user) {
       context.commit("SET_USER", user);
     },
   },
