@@ -22,7 +22,30 @@
                   ></v-text-field>
                 </v-col>
                 <v-col cols="7">
-                  <v-btn color="warning" class="ml-2">중복확인</v-btn>
+                  <v-btn
+                    :loading="loading"
+                    color="warning"
+                    class="ml-2"
+                    @click="btnCheckUid"
+                    >중복확인</v-btn
+                  >
+                  <v-chip
+                    v-if="chipRed"
+                    class="ma-2"
+                    color="red"
+                    text-color="white"
+                  >
+                    이미 사용중인 아이디입니다.
+                  </v-chip>
+
+                  <v-chip
+                    v-if="chipGreen"
+                    class="ma-2"
+                    color="green"
+                    text-color="white"
+                  >
+                    사용 가능한 아이디입니다.
+                  </v-chip>
                 </v-col>
               </v-row>
               <v-row no-gutters class="mb-2">
@@ -145,7 +168,6 @@
               </v-row>
             </v-card-text>
           </v-card>
-
           <v-sheet class="text-center py-4">
             <v-btn class="mr-2" @click="btnCancel">취소</v-btn>
             <v-btn color="primary" @click="btnRegister">등록</v-btn>
@@ -157,7 +179,7 @@
 </template>
 <script setup>
 import { useRouter } from "vue-router";
-import { reactive } from "vue";
+import { reactive, ref } from "vue";
 import axios from "axios";
 const router = useRouter();
 const user = reactive({
@@ -172,6 +194,11 @@ const user = reactive({
   addr: null,
   addrDetail: null,
 });
+
+const chipRed = ref(false);
+const chipGreen = ref(false);
+const loading = ref(false);
+
 const btnCancel = () => {
   router.push("/user/login");
 };
@@ -182,6 +209,32 @@ const btnRegister = () => {
       console.log(response);
       alert("회원가입 완료!");
       router.push("/user/login");
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+};
+
+const btnCheckUid = () => {
+  loading.value = true;
+
+  axios
+    .get("http://localhost/Voard/user/check-uid", {
+      params: { uid: user.uid },
+    })
+    .then((response) => {
+      console.log(response);
+      const result = response.data;
+      setTimeout(() => {
+        loading.value = false;
+        if (result > 0) {
+          chipRed.value = true;
+          chipGreen.value = false;
+        } else {
+          chipRed.value = false;
+          chipGreen.value = true;
+        }
+      }, 600);
     })
     .catch((error) => {
       console.log(error);
