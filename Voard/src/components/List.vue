@@ -21,28 +21,16 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="text-center">1</td>
-                <td class="text-left">
-                  <router-link to="/view">제목입니다.</router-link>
+              <tr v-for="(arti, index) in state.data.articles">
+                <td class="text-center">
+                  {{ state.pg.totalCnt - state.pg.limitStart - index }}
                 </td>
-                <td class="text-center">길동이</td>
-                <td class="text-center">12</td>
-                <td class="text-center">23-04-24</td>
-              </tr>
-              <tr>
-                <td class="text-center">2</td>
-                <td class="text-left">제목입니다.</td>
-                <td class="text-center">길동이</td>
-                <td class="text-center">12</td>
-                <td class="text-center">23-04-24</td>
-              </tr>
-              <tr>
-                <td class="text-center">3</td>
-                <td class="text-left">제목입니다.</td>
-                <td class="text-center">길동이</td>
-                <td class="text-center">12</td>
-                <td class="text-center">23-04-24</td>
+                <td class="text-left">
+                  <router-link to="/view">{{ arti.title }}</router-link>
+                </td>
+                <td class="text-center">{{ arti.nick }}</td>
+                <td class="text-center">{{ arti.hit }}</td>
+                <td class="text-center">{{ arti.rdate.substr(2, 8) }}</td>
               </tr>
             </tbody>
           </v-table>
@@ -51,8 +39,10 @@
           </v-sheet>
           <div class="text-center">
             <v-pagination
-              :length="100"
+              :length="state.pg.totalPage"
               :total-visible="7"
+              v-model="page"
+              @click="pageClickHandler"
               rounded="circle"
             ></v-pagination>
           </div>
@@ -64,9 +54,15 @@
 <script setup>
 import { useRouter } from "vue-router";
 import { useStore } from "vuex";
-import { computed } from "vue";
+import { computed, onBeforeMount, reactive, ref } from "vue";
+import axios from "axios";
 const router = useRouter();
 const store = useStore();
+const state = reactive({
+  data: {},
+  pg: {},
+});
+const page = ref(1);
 
 const user = computed(() => store.getters.user);
 const btnLogout = () => {
@@ -75,6 +71,24 @@ const btnLogout = () => {
 };
 const btnWrite = () => {
   router.push("/write");
+};
+onBeforeMount(() => {
+  getArticles(1);
+});
+const pageClickHandler = () => {
+  getArticles(page.value);
+};
+
+const getArticles = (page) => {
+  axios
+    .get("/articles", { params: { page: page } })
+    .then((response) => {
+      state.data = response.data;
+      state.pg = response.data.pageHandler;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 };
 </script>
 <style scoped></style>

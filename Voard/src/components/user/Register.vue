@@ -204,7 +204,7 @@ const btnCancel = () => {
 };
 const btnRegister = () => {
   axios
-    .post("http://localhost/Voard/user/register", user)
+    .post("/user/register", user)
     .then((response) => {
       console.log(response);
       alert("회원가입 완료!");

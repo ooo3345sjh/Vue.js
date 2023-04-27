@@ -10,6 +10,7 @@ import View from "../components/View.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
+    { path: "", component: Login },
     { path: "/user/login", name: "Login", component: Login },
     { path: "/user/terms", name: "Terms", component: Terms },
     { path: "/user/register", name: "Register", component: Register },

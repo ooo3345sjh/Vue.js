@@ -78,7 +78,7 @@ const btnWrite = () => {
   frm.append("uid", article.uid);
 
   axios
-    .post("http://localhost/Voard/article", frm, {
+    .post("/article", frm, {
       headers: {
         "Content-Type": "multipart/form-data",
       },
