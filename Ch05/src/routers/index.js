@@ -70,6 +70,7 @@ const router = createRouter({
     { path: "/form1", name: "Form1", component: Form1 },
     { path: "/formResult1", name: "FormResult1", component: FormResult1 },
     { path: "/form2", name: "Form2", component: Form2 },
+
     {
       path: "/formResult2/:name/:age/:addr",
       name: "FormResult2",

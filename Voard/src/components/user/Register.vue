@@ -219,7 +219,7 @@ const btnCheckUid = () => {
   loading.value = true;
 
   axios
-    .get("http://localhost/Voard/user/check-uid", {
+    .get("/user/check-uid", {
       params: { uid: user.uid },
     })
     .then((response) => {
