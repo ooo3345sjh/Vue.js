@@ -30,7 +30,3 @@
 - Vue.js 는 각 생명주기를 Hooking 할 수 있는 방법을 제공, 이를 LifeCycle Hook이라고 함
 
 ![Untitled](https://user-images.githubusercontent.com/111489860/235606139-9ddc5a01-bc5e-4ebf-90f1-38b384c84a2f.png)
-
-## 5. 프로젝트 실습
-
-- [프로젝트 링크](https://github.com/ooo3345sjh/Vue.js/tree/main/Ch03)
