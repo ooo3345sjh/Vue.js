@@ -13,3 +13,9 @@
 ## 글 목록
 ![list](https://user-images.githubusercontent.com/111489860/235627376-9ed56cf0-0dee-46d0-855c-6b68bbdb4920.PNG)<br/>
 
+## 글 쓰기
+![write](https://user-images.githubusercontent.com/111489860/235629185-fd4592cd-4c42-4362-9c9d-947fa2eba923.PNG)
+
+## 글 보기
+ 구현 안함
+
