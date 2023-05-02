@@ -56,6 +56,3 @@
 
 ![Untitled](https://user-images.githubusercontent.com/111489860/235603827-8c473a47-fb6a-435d-8031-63c6a74044b3.png)
 
-## 7. 프로젝트 실습
-
-- [프로젝트 링크](https://github.com/ooo3345sjh/Vue.js/tree/main/Ch01)
