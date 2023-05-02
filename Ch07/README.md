@@ -26,4 +26,3 @@
 ## 4. 프로젝트 실습
 
 - [백엔드](https://github.com/ooo3345sjh/SpringBoot/tree/main/Voard)
-- [프론트엔드](https://github.com/ooo3345sjh/Vue.js/tree/main/Voard)
