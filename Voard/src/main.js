@@ -23,5 +23,5 @@ registerPlugins(app);
 app.use(router).use(store).mount("#app");
 
 // axios 전역 설정
-// axios.defaults.baseURL = "http://localhost"; // 개발용
-axios.defaults.baseURL = "http://junghyun.site:8787"; // 배포용
+axios.defaults.baseURL = "http://localhost"; // 개발용
+// axios.defaults.baseURL = ""; // 배포용
