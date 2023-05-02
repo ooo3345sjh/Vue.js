@@ -45,7 +45,8 @@
 7. Ch07. Axios
 8. Ch08. Vuetify
 9. 미니프로젝트 – TodoApp
-10. 종합프로젝트 – 게시판(Vue.js + Spring REST API)
+10. 미니프로젝트 – App
+11. 종합프로젝트 – 게시판(Vue.js + Spring REST API)
 
 ## 6. 개발 환경 설정과 프로젝트 실습
 
