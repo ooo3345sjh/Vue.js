@@ -6,7 +6,7 @@
 - SPASingle Page Application 개발을 위한 프레임워크(Angular, React, Svelte) 가운데 하나
 - ES6를 기본 언어로 하며 가장 직관적이고 쉽게 배울 수 있는 프레임워크
 
-![Untitled](%E1%84%8C%E1%85%A61%E1%84%8C%E1%85%A1%E1%86%BC%20Vue%20js%20%E1%84%89%E1%85%A9%E1%84%80%E1%85%A2%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC%20c43a18361ab8408e9c79992238d54cb0/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/111489860/235603455-7a9ddbeb-5bd4-4fb2-974e-6c993f005dd1.png)
 
 ## 2. Vue.js 특징
 
