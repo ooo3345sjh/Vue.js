@@ -14,17 +14,17 @@
 - MVVM 패턴은 화면을 Model – View – ViewModel 로 구조화하여 개발하는 방식
 - Vue.js는 Component 기반 프레임워크로 화면 구성을 독립적인 모듈 형태로 구성하여 조립한 형태
     
-    ![Untitled](%E1%84%8C%E1%85%A61%E1%84%8C%E1%85%A1%E1%86%BC%20Vue%20js%20%E1%84%89%E1%85%A9%E1%84%80%E1%85%A2%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC%20c43a18361ab8408e9c79992238d54cb0/Untitled%201.png)
+    ![Untitled](https://user-images.githubusercontent.com/111489860/235603628-c115673b-82a9-4a06-97d6-7bd65589a770.png)
     
 
-![Untitled](https://user-images.githubusercontent.com/111489860/235603628-c115673b-82a9-4a06-97d6-7bd65589a770.png)
+![Untitled](https://user-images.githubusercontent.com/111489860/235603660-fe5036e2-4b27-4d4d-81e5-637e1b89e053.png)
 
 ## 3. Vue.js 프로젝트 구성
 
 - 빠르고 간편한 프로젝트 구성을 위해 Vue CLI 또는 Vite 번들러 사용
 - .vue 파일은 컴포넌트로 구성하는 파일로 template, script, style로 구성
 
-![Untitled](%E1%84%8C%E1%85%A61%E1%84%8C%E1%85%A1%E1%86%BC%20Vue%20js%20%E1%84%89%E1%85%A9%E1%84%80%E1%85%A2%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC%20c43a18361ab8408e9c79992238d54cb0/Untitled%203.png)
+![Untitled](https://user-images.githubusercontent.com/111489860/235603706-097d094c-9703-41d4-951e-8d9dfed44c95.png)
 
 ## 4. 모듈 번들러
 
@@ -32,7 +32,7 @@
 - Vue.js는 모듈 번들러 도구로 Webpack, Rollup, Vite 사용
 - Vite는 Vue3에서 사용하는 공식 모듈 번들러 도구
 
-![Untitled](%E1%84%8C%E1%85%A61%E1%84%8C%E1%85%A1%E1%86%BC%20Vue%20js%20%E1%84%89%E1%85%A9%E1%84%80%E1%85%A2%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC%20c43a18361ab8408e9c79992238d54cb0/Untitled%204.png)
+![Untitled](https://user-images.githubusercontent.com/111489860/235603771-20bdf458-6b8d-4e87-8488-7a4483514e9e.png)
 
 ## 5. Vue.js 실습안내
 
@@ -54,7 +54,7 @@
 3. Chrome + Vue.js plugin 설치
 4. Vue.js 프로젝트 생성 및 실행
 
-![Untitled](%E1%84%8C%E1%85%A61%E1%84%8C%E1%85%A1%E1%86%BC%20Vue%20js%20%E1%84%89%E1%85%A9%E1%84%80%E1%85%A2%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC%20c43a18361ab8408e9c79992238d54cb0/Untitled%205.png)
+![Untitled](https://user-images.githubusercontent.com/111489860/235603827-8c473a47-fb6a-435d-8031-63c6a74044b3.png)
 
 ## 7. 프로젝트 실습
 
