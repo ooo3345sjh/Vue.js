@@ -27,7 +27,3 @@
 - Named View는 같은 레벨에서 컴포넌트가 한 번에 출력
 
 ![Untitled](https://user-images.githubusercontent.com/111489860/235608813-756278aa-0549-4def-9f22-70e3613b8c03.png)
-
-## 5. 프로젝트 실습
-
-- [프로젝트 링크](https://github.com/ooo3345sjh/Vue.js/tree/main/Ch05)
