@@ -2,7 +2,7 @@
 ## Todo 등록
 ![등록전](https://user-images.githubusercontent.com/111489860/235612743-d06359bb-72d6-4d37-af68-62be3bc8ba75.PNG)</br>
 
-<p align="center" width="300">
+<p align="center" width="300" style="display:inline-block;">
   <img src="https://user-images.githubusercontent.com/111489860/235613733-fc53dcf4-6e3f-4c26-9d0f-6cfddcd1ef1a.png" height="50"></br>
 </p>
 
