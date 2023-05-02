@@ -1,7 +1,7 @@
 # 종합프로젝트. 게시판(Vue.js + Spring REST API)
 ## [시연 동영상](https://www.youtube.com/watch?v=g9589hDJdD4)
 
-## 로그인 
+## JWT 토큰 인증방식을 이요한 로그인 
 ![login](https://user-images.githubusercontent.com/111489860/235628081-4d8e9bf4-da73-4c4e-8655-47f74405dec0.PNG)
 
 ## 약관동의 
